@@ -1,0 +1,16 @@
+{
+  "name": "airzreader",
+  "version": "0.0.1",
+  "description": "A wepabb that displays the stories of /u/airz23",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node index.js"
+  },
+  "author": "Tim Beattie",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.9.7",
+    "feedparser": "^0.19.2"
+  }
+}
