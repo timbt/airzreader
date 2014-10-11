@@ -1,11 +1,11 @@
 {
   "name": "airzreader",
   "version": "0.0.1",
-  "description": "A wepabb that displays the stories of /u/airz23",
-  "main": "index.js",
+  "description": "A webapp that displays the stories of /u/airz23",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "node index.js"
+    "test": "node app.js"
   },
   "author": "Tim Beattie",
   "license": "ISC",
