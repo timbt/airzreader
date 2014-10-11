@@ -24,6 +24,6 @@ app.get("/", function (request, response){
 	//response.send("test");
 });
 
-var server = app.listen(80, function(){
+var server = app.listen(process.env.PORT || 5000, function(){
 	console.log("Listening on port %d", server.address().port);
 });
