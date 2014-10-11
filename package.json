@@ -1,6 +1,6 @@
 {
   "name": "airzreader",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A webapp that displays the stories of /u/airz23",
   "main": "app.js",
   "scripts": {
@@ -12,5 +12,14 @@
   "dependencies": {
     "express": "^4.9.7",
     "feedparser": "^0.19.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timbt/airzreader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/timbt/airzreader/issues"
+  },
+  "homepage": "https://github.com/timbt/airzreader"
 }
