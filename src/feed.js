@@ -1,6 +1,6 @@
 var http = require("http");
 var eventEmitter = require("events").EventEmitter;
-var feedParser = require("feedParser");
+var feedParser = require("feedparser");
 
 var feedMeta;
 var stories = [];
