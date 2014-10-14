@@ -8,7 +8,7 @@ The end goal is basically a nice looking RSS feed reader web app (tailored of co
 
 TODO:
 
-* Back-end improvements (such as properly caching the obtained feeds.)
+* Back-end improvements (such as properly caching the obtained feeds.[Sort of fixed])
 * Decide on a templating/rendering strategy.
 * Make stories viewable one at at a time.
 * Basically the whole front-end of this thing.

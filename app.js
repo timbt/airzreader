@@ -9,6 +9,7 @@ var doc = "";
 feed.on('ready', function(){
 
 	//console.log("ready");
+	doc = "";
 
 	feed.stories.forEach(function(story){
 		doc += "<h2>" + story.title + "</h2>";

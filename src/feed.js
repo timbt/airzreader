@@ -2,13 +2,13 @@ var http = require("http");
 var eventEmitter = require("events").EventEmitter;
 var feedParser = require("feedparser");
 
-var feedMeta;
-var stories = [];
-
 module.exports = new eventEmitter();
 
-http.get("http://www.reddit.com/user/airz23/submitted/.rss", function(response){
+var update = function () {http.get("http://www.reddit.com/user/airz23/submitted/.rss", function(response){
 	
+	var feedMeta;
+	var stories = [];
+
 	response.pipe(new feedParser({}))
 		.on('error', function(error){
 			console.log("error in feed.js");
@@ -29,8 +29,10 @@ http.get("http://www.reddit.com/user/airz23/submitted/.rss", function(response){
 				module.exports.meta = feedMeta;
 				module.exports.stories = stories;
 				module.exports.emit('ready');
-				console.log("Hello from feed.js"); //Testing
+				console.log("Hello from feed.js: " + stories.length); //Testing
 		})
 
-});
+})};
 
+update(); //Initialize on server start-up
+setInterval(update,1000 * 60 * 5); //Every 5 minutes
